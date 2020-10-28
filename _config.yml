@@ -1,5 +1,4 @@
 name: Alexander Barton
 markdown: kramdown
-pages: {about: About, cv: CV, blog: Blog}
 
-baseurl: /
+baseurl: ""

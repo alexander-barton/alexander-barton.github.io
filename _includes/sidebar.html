@@ -6,12 +6,12 @@
           {{ site.title }}
         </a>
       </h1>
-      <p><img src="{{ site.baseurl }}assets/images/mainFace.jpg" height="200" width="250"></p>
+      <p><img src="{{ "/assets/images/mainFace.jpg" | relative_url }}" height="200" width="250"></p>
       <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ "/index.html" | relative_url }}">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
