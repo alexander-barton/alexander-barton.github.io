@@ -1,32 +1,15 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<header>
-	  <img src="/assets/images/mainFace.jpg" alt="A smile worthy of Conrad Veidt." width="300" height="225">
-	</header>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-      
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sidebar.html %}
+
+    <div class="content container">
       {{ content }}
-      
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:barton.alexs@gmail.com">email</a></li>
-        		<li><a href="https://github.com/alexander-barton?tab=repositories">git</a></li>
-			</ul>
-		</footer>
-	</body>
+    </div>
+
+  </body>
 </html>
